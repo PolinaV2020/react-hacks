@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import App from "./App/App.js";
+import "./Tap/Tap.css";
 
 ReactDOM.render(
-  <React.StrictMode></React.StrictMode>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,0 +1,61 @@
+.tap-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.tap__button {
+  margin-top: 30px;
+  border: none;
+  min-width: 250px;
+  min-height: 80px;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.1em;
+  letter-spacing: 0.2em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+.tap__button:before,
+.tap__button:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: "";
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(
+    60deg,
+    rgb(247, 149, 51),
+    rgb(243, 112, 85),
+    rgb(239, 78, 123),
+    rgb(161, 102, 171),
+    rgb(80, 115, 184),
+    rgb(16, 152, 173),
+    rgb(7, 179, 155),
+    rgb(111, 186, 130)
+  );
+}
+
+.tap__button:before {
+  filter: blur(7px);
+  transition: all 0.25s ease;
+  animation: pulse 10s infinite ease;
+}
+
+.tap__button:after {
+  filter: blur(0.3px);
+}
+
+.tap__button:hover {
+  transform: scale(1.05);
+  transition: all 0.8s ease 0;
+}
