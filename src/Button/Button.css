@@ -1,0 +1,14 @@
+.button-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.button__number {
+  padding-top: 25px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+  color: #ffffff;
+  font-size: 50px;
+}
